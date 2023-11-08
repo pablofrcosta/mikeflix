@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../../images/estreias-netflix-junho-2021.webp');
+}
+
+.title {
+  color: #ff0000;
+  font-size: 45px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.829);
+  width: 50vmin;
+  height: 80vmin;
+  border-radius: 20px;
+}
+
+
+form>.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 37vmin;
+  margin-bottom: 2rem;
+}
+
+form>.inputs>h1 {
+  width: 40vmin;
+  font-size: 30px;
+  text-align: start;
+  color: #fff;
+}
+
+form>.inputs>input {
+  width: 40vmin;
+  height: 5vmin;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+form>.inputs>div {
+  display: flex;
+  flex-direction: column;
+}
+
+form>.inputs>div>input {
+  width: 40vmin;
+  height: 5vmin;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  width: 50vmin;
+}
+
+.buttons>button {
+  width: 15vmin;
+  height: 5vmin;
+}

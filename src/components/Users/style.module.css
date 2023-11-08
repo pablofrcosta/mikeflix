@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vmin;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20vmin;
+  background-color: red;
+  width: 35vmin;
+  height: 35vmin;
+  cursor: pointer;
+}
+
+.main>div>.userName {
+  text-align: center;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #580202;
+  border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+
+::-webkit-scrollbar-horizontal {
+  height: 12px;
+}

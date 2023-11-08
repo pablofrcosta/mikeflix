@@ -1,0 +1,32 @@
+.section>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media(max-width: 990px) {
+  .section>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 700px) {
+  .section>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.imageMovies {
+  max-width: 80%;
+  max-height: 80%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.link {
+  cursor: default;
+  padding: 0;
+}
