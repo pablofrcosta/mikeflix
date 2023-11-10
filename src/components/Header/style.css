@@ -41,6 +41,17 @@ nav>div>input {
   font-size: 20px;
 }
 
+.dropdown {
+  background-color: red;
+  width: 10vw;
+  height: 5vw;
+}
+
+#dropdown-basic-button {
+  width: 14vmin;
+  height: 4vmin;
+}
+
 @media(max-width: 700px) {
   header {
     height: 30vw;

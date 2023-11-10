@@ -75,3 +75,218 @@ form>.inputs>div>input {
   width: 15vmin;
   height: 5vmin;
 }
+
+@media(max-width: 726px) {
+  .title {
+    color: #ff0000;
+    font-size: 65px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 70vmin;
+    height: 115vmin;
+    border-radius: 20px;
+  }
+
+
+  form>.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 50vmin;
+    margin-bottom: 2rem;
+  }
+
+  form>.inputs>h1 {
+    width: 60vmin;
+    font-size: 30px;
+    text-align: start;
+    color: #fff;
+  }
+
+  form>.inputs>input {
+    width: 60vmin;
+    height: 7vmin;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  form>.inputs>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form>.inputs>div>input {
+    width: 60vmin;
+    height: 7vmin;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-left: 5vmin;
+    gap: 2rem;
+    flex-direction: column;
+    width: 50vmin;
+  }
+
+  .buttons>button {
+    width: 30vmin;
+    height: 7vmin;
+  }
+}
+
+@media(max-width: 582px) {
+  .title {
+    color: #ff0000;
+    font-size: 65px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 90vmin;
+    height: 145vmin;
+    border-radius: 20px;
+  }
+
+
+  form>.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 55vmin;
+    margin-bottom: 2rem;
+  }
+
+  form>.inputs>h1 {
+    width: 73vmin;
+    font-size: 30px;
+    text-align: start;
+    color: #fff;
+  }
+
+  form>.inputs>input {
+    width: 73vmin;
+    height: 9vmin;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  form>.inputs>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form>.inputs>div>input {
+    width: 73vmin;
+    height: 9vmin;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-left: 9vmin;
+    gap: 2rem;
+    flex-direction: column;
+    width: 50vmin;
+  }
+
+  .buttons>button {
+    width: 35vmin;
+    height: 9vmin;
+  }
+}
+
+@media(max-width: 400px) {
+  .title {
+    color: #ff0000;
+    font-size: 65px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 99vmin;
+    height: 200vmin;
+    border-radius: 20px;
+  }
+
+
+  form>.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 70vmin;
+  }
+
+  form>.inputs>h1 {
+    width: 90vmin;
+    font-size: 30px;
+    text-align: start;
+    color: #fff;
+  }
+
+  form>.inputs>input {
+    width: 90vmin;
+    height: 12vmin;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+  }
+
+  form>.inputs>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form>.inputs>div>input {
+    width: 90vmin;
+    height: 12vmin;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-left: 5vmin;
+    gap: 2rem;
+    flex-direction: column;
+    width: 55vmin;
+  }
+
+  .buttons>button {
+    width: 35vmin;
+    height: 9vmin;
+  }
+}

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import styles from './style.module.css'
 import { useEffect, useState } from 'react'
 
@@ -43,23 +43,31 @@ export default function HomeMovie() {
     fetchSerie().then(results => { setSeries(results) })
   }, [])
 
-  return (
-    <div className={styles.container}>
-      <div className={styles.section}>
-        <div>
-          {movies.map(movie => (
-            <div key={movie.id} className={styles.card} >
-              <Link to={`/home/info/${movie.id}`} state={movie} className={styles.link}><img src={`${image_path}${movie.poster_path}`} alt={movie.title} className={styles.imageMovies} /></Link>
-            </div>
-          ))
-          }
-          {series.map(serie => (
-            <div key={serie.id}>
-              <Link to={`/home/info/${serie.id}`} state={serie}><img src={`${image_path}${serie.poster_path}`} alt={serie.title} className={styles.imageMovies} /></Link>
-            </div>
-          ))}
-        </div>
+  const logedUser = localStorage.getItem('loggedInUser')
+  const navigator = useNavigate()
+
+  if (logedUser) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.section}>
+          <div>
+            {movies.map(movie => (
+              <div key={movie.id} className={styles.card} >
+                <Link to={`/home/info/${movie.id}`} state={movie} className={styles.link}><img src={`${image_path}${movie.poster_path}`} alt={movie.title} className={styles.imageMovies} /></Link>
+              </div>
+            ))
+            }
+            {series.map(serie => (
+              <div key={serie.id}>
+                <Link to={`/home/info/${serie.id}`} state={serie}><img src={`${image_path}${serie.poster_path}`} alt={serie.title} className={styles.imageMovies} /></Link>
+              </div>
+            ))}
+          </div>
+        </div >
       </div >
-    </div >
-  )
+    )
+  } else {
+    navigator('/')
+  }
+
 }

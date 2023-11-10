@@ -5,6 +5,7 @@ import { AiFillEye } from 'react-icons/ai'
 import { Link, useNavigate } from "react-router-dom"
 import style from './style.module.css'
 
+
 export default function FormRegister({ userUpdate }) {
   const userDefault = {
     name: "",
@@ -28,7 +29,7 @@ export default function FormRegister({ userUpdate }) {
     const validUser = new User(user)
     if (user.password !== '' && user.password === user.passwordConfirm) {
       setData(validUser)
-      alert('deu certo ae men')
+      alert('Usuário cadastrado com sucesso!')
     } else {
       alert('Error')
     }

@@ -2,7 +2,7 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './style.module.css'
 import { RiNetflixFill } from 'react-icons/ri'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ClipLoader from "react-spinners/ClipLoader";
 
 
@@ -28,6 +28,16 @@ export default function Users() {
     }
   }
 
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem('loggedInUser');
+
+    if (!loggedInUser) {
+      // Navegar para a página inicial se o usuário não estiver logado
+      navigate('/');
+    }
+  }, [navigate]);
+
+
   return (
     <div className={styles.container}>
       <div className={styles.main}>
@@ -46,4 +56,8 @@ export default function Users() {
       </div>
     </div>
   )
+
+
+
+
 }
