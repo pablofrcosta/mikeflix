@@ -89,7 +89,7 @@ form>.inputs>div>input {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.829);
     width: 70vmin;
-    height: 115vmin;
+    height: 98vmin;
     border-radius: 20px;
   }
 
@@ -99,7 +99,7 @@ form>.inputs>div>input {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    height: 50vmin;
+    height: 35vmin;
     margin-bottom: 2rem;
   }
 
@@ -160,8 +160,8 @@ form>.inputs>div>input {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.829);
-    width: 90vmin;
-    height: 145vmin;
+    width: 82vmin;
+    height: 94vmax;
     border-radius: 20px;
   }
 
@@ -209,6 +209,7 @@ form>.inputs>div>input {
     align-items: start;
     justify-content: center;
     margin-left: 9vmin;
+    margin-bottom: 20vmin;
     gap: 2rem;
     flex-direction: column;
     width: 50vmin;
@@ -233,7 +234,7 @@ form>.inputs>div>input {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.829);
     width: 99vmin;
-    height: 200vmin;
+    height: 170vmin;
     border-radius: 20px;
   }
 
