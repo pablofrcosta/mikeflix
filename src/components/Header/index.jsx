@@ -3,9 +3,6 @@ import { CgLogOff } from 'react-icons/cg'
 import './style.css'
 import { Link, useNavigate } from 'react-router-dom';
 
-
-
-
 export default function Header() {
   function scrollToTop() {
     window.scrollTo({
@@ -42,8 +39,6 @@ export default function Header() {
       <nav>
         <strong onClick={scrollToTop} style={{ cursor: 'pointer' }}><Link to={''} style={{ textDecoration: 'none', color: 'red' }}>MIKEFLIX</Link></strong>
         <div>
-          <input type="text" name="search" id="search" placeholder='Procurar filmes' />
-          <AiOutlineSearch size={30} />
           <p>{getUser()}</p><CgLogOff size={23} style={{ cursor: "pointer" }} onClick={userExit} />
         </div>
       </nav>

@@ -18,8 +18,6 @@ export default function FormRegister({ userUpdate }) {
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate()
 
-  // usuario vai ter uma array de objetos com [{user, password, id}]
-
   const handleChange = (ev) => {
     const { name, value } = ev.target
     setUser({ ...user, [name]: value })

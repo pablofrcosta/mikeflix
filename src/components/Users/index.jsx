@@ -32,7 +32,6 @@ export default function Users() {
     const loggedInUser = localStorage.getItem('loggedInUser');
 
     if (!loggedInUser) {
-      // Navegar para a página inicial se o usuário não estiver logado
       navigate('/');
     }
   }, [navigate]);

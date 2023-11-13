@@ -10,14 +10,13 @@ export default function FormLogin() {
   const { users } = useData()
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate()
-  // usuario vai ter uma array de objetos com [{user, password, id}]
 
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("loggedInUser")
+    const loggedInUser = localStorage.getItem("loggedInUser");
     if (loggedInUser) {
-      navigate('/users')
+      navigate('/users');
     }
-  }, [])
+  }, []);
 
   const handleChange = (ev) => {
     const { name, value } = ev.target
@@ -38,11 +37,11 @@ export default function FormLogin() {
     );
 
     if (userFound) {
-      console.log('Login bem-sucedido');
-      localStorage.setItem("loggedInUser", JSON.stringify(userFound))
-      navigate("/users")
+      alert('Login bem-sucedido');
+      localStorage.setItem("loggedInUser", JSON.stringify(userFound));
+      navigate("/users");
     } else {
-      console.log('Login falhou');
+      alert('Login falhou');
     }
   };
 
